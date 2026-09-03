@@ -26,6 +26,9 @@
 // ═══════════════════════════════════════════════════════════════
 
 // ---- 1. Your drum kit — each voice can have 1–4 sample variations.
+// Round-robin cycling (below) steps through them in order per trigger,
+// so you get even coverage and never hear the same variation twice in a
+// row — more reliable than pure random with only a few options each.
 const KIT_FILES = {
     kick:        ['assets/audio/00_Kick_04_Big.wav', 'assets/audio/00_Kick_05_Big.wav'],
     snare:       ['assets/audio/01_Snare_20_G.wav', 'assets/audio/01_Snare_21_G.wav', 'assets/audio/01_Snare_22_G.wav', 'assets/audio/02_Snare_Flam_01_E.wav', 'assets/audio/02_Snare_Roll_01_Short.wav'],
